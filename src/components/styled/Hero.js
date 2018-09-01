@@ -8,7 +8,7 @@ export const Hero = styled.h2`
 	align-content: center;
 	align-self: center;
 	align-items: center;
-	height: calc(100vh - 200px);
+	height: calc(100vh - 150px);
 	justify-content: center;
 	display: flex;
 	text-align: center;

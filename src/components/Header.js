@@ -62,7 +62,7 @@ export const Header = () => (
     </Heading>
 
     <Navigation>
-      <Link to="/posts">posts</Link>
+      <Link to="/posts" hidden>posts</Link>
       <a href="mailto:gc@frontend.consulting">get in touch</a>
     </Navigation>
   </FlexHeader>
