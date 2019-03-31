@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "gatsby";
-import theme from "../../config/Theme";
-import { media } from "../utils/media";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import theme from '../../config/Theme';
+import { media } from '../utils/media';
 
 const Heading = styled.h1`
 	font-size: 18px;
@@ -49,23 +49,25 @@ const FlexHeader = styled.div`
 	max-width: 1140px;
 	margin: 0 auto;
 	padding: 1rem 3rem;
-	
+
 	@media ${media.phone} {
-    padding: 20px;
-  }
+		padding: 20px;
+	}
 `;
 
 export const Header = () => (
-  <FlexHeader>
-    <Heading>
-      <Link to="/">frontend.consulting</Link>
-    </Heading>
+	<FlexHeader>
+		<Heading>
+			<Link to="/">frontend.consulting</Link>
+		</Heading>
 
-    <Navigation>
-      <Link to="/posts" hidden>posts</Link>
-      <a href="mailto:gc@frontend.consulting">get in touch</a>
-    </Navigation>
-  </FlexHeader>
+		<Navigation>
+			<Link to="/posts" hidden>
+				posts
+			</Link>
+			<a href="mailto:gc@frontend.consulting">get in touch</a>
+		</Navigation>
+	</FlexHeader>
 );
 
 export default Header;

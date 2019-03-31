@@ -1,5 +1,6 @@
 import React from 'react';
-import { Layout, Article, Wrapper, Button, Header } from 'components';
+
+import { Layout, Wrapper, Header } from 'components';
 import { Thin, Underlined } from '../components/styled/Text';
 import { Hero, HeroLine } from '../components/styled/Hero';
 import { Content } from '../components/styled/Content';

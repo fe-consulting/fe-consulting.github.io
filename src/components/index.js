@@ -7,6 +7,7 @@ import SectionTitle from './SectionTitle';
 import SEO from './SEO';
 import Subline from './Subline';
 import Wrapper from './Wrapper';
+import Analytics from './Analytics';
 
 export {
 	Article,
@@ -18,4 +19,5 @@ export {
 	SEO,
 	Subline,
 	Wrapper,
+	Analytics,
 };
