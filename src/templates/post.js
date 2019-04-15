@@ -15,17 +15,19 @@ const Title = styled.h1`
 `;
 
 const PostContent = styled.div`
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: 300;
 	font-family: 'Merriweather', serif;
 	line-height: 2;
 	width: 100%;
-	max-width: 650px;
-	margin-top: 4em;
+	max-width: 800px;
+	margin-top: 2em;
 `;
 
 injectGlobal`
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
 `;
+require('prismjs/themes/prism-tomorrow.css');
 
 const Post = props => {
 	const { slug, prev, next } = props.pageContext;

@@ -2,30 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
-import {
-	Layout,
-	Wrapper,
-	Header,
-	Subline,
-	Article,
-	SectionTitle,
-} from 'components';
-import { media } from '../utils/media';
+import { Layout, Wrapper, Header, Subline, Article } from 'components';
 import config from '../../config/SiteConfig';
-
-const Content = styled.div`
-	grid-column: 2;
-	padding: 2rem 4rem;
-	z-index: 9000;
-	margin-top: -3rem;
-	@media ${media.tablet} {
-		padding: 3rem 3rem;
-	}
-	@media ${media.phone} {
-		padding: 2rem 1.5rem;
-	}
-`;
+import { Content } from '../components/styled/Content';
+import { Underlined } from '../components/styled/Text';
 
 const Category = props => {
 	const { category } = props.pageContext;
@@ -36,13 +16,14 @@ const Category = props => {
 
 	return (
 		<Layout>
+			<Helmet title={`${category} | ${config.siteTitle}`} />
+			<Header />
+
 			<Wrapper>
-				<Helmet title={`${category} | ${config.siteTitle}`} />
-				<Header>
-					<Link to="/">{config.siteTitle}</Link>
-				</Header>
 				<Content>
-					<SectionTitle>Category &ndash; {category}</SectionTitle>
+					<h2>
+						<Underlined>{category}</Underlined>
+					</h2>
 					<Subline sectionTitle>
 						{subline} (See{' '}
 						<Link to="/categories">all categories</Link>)

@@ -96,7 +96,7 @@ const Layout = ({ children }) => (
 							target="_blank"
 						>
 							<img
-								src="images/github.png"
+								src="/images/github.png"
 								alt="Github"
 								width="25"
 								height="auto"

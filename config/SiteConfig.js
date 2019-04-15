@@ -6,7 +6,7 @@ module.exports = {
 	siteUrl: 'https://frontend.consulting', // Domain of your site. No trailing slash!
 	siteLanguage: 'en', // Language Tag on <html> element
 	siteDescription:
-		'Angular and Typescript Consulting agency based in London UK',
+		'Angular and Typescript Consulting services based in London UK',
 
 	// Manifest and Progress color
 	themeColor: '#64b5f6',

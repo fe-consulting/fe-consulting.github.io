@@ -38,7 +38,8 @@ const Navigation = styled.div`
 	}
 
 	a:hover,
-	[aria-current] {
+	[aria-current],
+	.current {
 		border-bottom-color: ${theme.primary};
 		color: #fff;
 	}
@@ -62,8 +63,8 @@ export const Header = () => (
 		</Heading>
 
 		<Navigation>
-			<Link to="/posts" hidden>
-				posts
+			<Link activeClassName="current" to="/articles">
+				articles
 			</Link>
 			<a href="mailto:gc@frontend.consulting">get in touch</a>
 		</Navigation>

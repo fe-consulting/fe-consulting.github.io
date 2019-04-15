@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { Layout, Article, Wrapper, Button, Header } from 'components';
+import { Layout, Article, Wrapper, Header } from 'components';
 import { Content } from '../components/styled/Content';
 import { Underlined } from '../components/styled/Text';
 
@@ -16,9 +16,10 @@ const PostsPage = ({
 		<Wrapper>
 			<Content>
 				<h2>
-					<Underlined>Posts</Underlined>
+					<Underlined>Articles</Underlined>
 				</h2>
-				{(postEdges.length &&
+
+				{postEdges.length &&
 					postEdges.map(post => (
 						<Article
 							title={post.node.frontmatter.title}
@@ -29,7 +30,7 @@ const PostsPage = ({
 							category={post.node.frontmatter.category}
 							key={post.node.fields.slug}
 						/>
-					))) || <span>Ops, nothing here yet.</span>}
+					))}
 			</Content>
 		</Wrapper>
 	</Layout>
