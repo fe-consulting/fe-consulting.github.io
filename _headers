@@ -9,23 +9,29 @@
 /sw.js
   Cache-Control: no-cache
 /offline-plugin-app-shell-fallback/
-  Link: </webpack-runtime-233e18c5fe5f8d8e5631.js>; rel=preload; as=script
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-4f8aa662bdafadc950c6.js>; rel=preload; as=script
 /on-push-change-detection-for-faster-angular-apps
-  Link: </webpack-runtime-233e18c5fe5f8d8e5631.js>; rel=preload; as=script
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
+  Link: </styles.74fcbd8a442269609e19.css>; rel=preload; as=script
+/enforce-your-team-coding-style-with-prettier-and-ts-lint
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
   Link: </styles.74fcbd8a442269609e19.css>; rel=preload; as=script
 /categories/angular
-  Link: </webpack-runtime-233e18c5fe5f8d8e5631.js>; rel=preload; as=script
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
+  Link: </0-42d8fa70094c963efbe7.js>; rel=preload; as=script
+/categories/software-engineering
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
   Link: </0-42d8fa70094c963efbe7.js>; rel=preload; as=script
 /articles/
-  Link: </webpack-runtime-233e18c5fe5f8d8e5631.js>; rel=preload; as=script
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
   Link: </0-42d8fa70094c963efbe7.js>; rel=preload; as=script
 /categories/
-  Link: </webpack-runtime-233e18c5fe5f8d8e5631.js>; rel=preload; as=script
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
   Link: </0-42d8fa70094c963efbe7.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-233e18c5fe5f8d8e5631.js>; rel=preload; as=script
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
   Link: </0-42d8fa70094c963efbe7.js>; rel=preload; as=script
 /success/
-  Link: </webpack-runtime-233e18c5fe5f8d8e5631.js>; rel=preload; as=script
+  Link: </webpack-runtime-1b2ac4eb43f49e78beb1.js>; rel=preload; as=script
   Link: </0-42d8fa70094c963efbe7.js>; rel=preload; as=script
