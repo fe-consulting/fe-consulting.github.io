@@ -9,6 +9,7 @@ import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
 import config from '../../config/SiteConfig';
 import '../utils/prismjs-theme.css';
 import { Content } from '../components/styled/Content';
+import theme from '../../config/Theme';
 
 const Title = styled.h1`
 	margin-bottom: 1rem;
@@ -22,6 +23,11 @@ const PostContent = styled.div`
 	width: 100%;
 	max-width: 800px;
 	margin-top: 2em;
+
+	a[target='_blank'] {
+		border-bottom: 1px solid ${theme.primary};
+		padding-bottom: 2px;
+	}
 `;
 
 injectGlobal`
