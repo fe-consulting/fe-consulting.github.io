@@ -182,14 +182,14 @@ In order to do that, locate and open the _tsconfig.json_ in your root folder and
 And now, we will import the environment object by simply referencing “@environment” as path:
 
 ```typescript
-_import_ { Component } _from_ '@angular/core';  
-_import_ { environment } _from_ '@environment'; // nice!  
+import { Component } from '@angular/core';  
+import { environment } from '@environment'; // nice!  
   
 @Component({  
     selector: 'app-root',  
     templateUrl: './app.component.html',  
 })  
-_export class_ AppComponent {  
+export class AppComponent {  
     environment = environment;  
 }
 ```
