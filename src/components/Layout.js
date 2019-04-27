@@ -1,12 +1,12 @@
 /* eslint no-unused-expressions:0 */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import { SEO, Analytics } from 'components';
-import theme from '../../config/Theme';
-import { media } from '../utils/media';
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import styled, { ThemeProvider, injectGlobal } from "styled-components";
+import { SEO, Analytics } from "components";
+import theme from "../../config/Theme";
+import { media } from "../utils/media";
 
 injectGlobal`
 	@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600');
@@ -70,6 +70,10 @@ injectGlobal`
 const Footer = styled.footer`
 	text-align: center;
 	padding: 0;
+	
+	a {
+		padding: 0 1rem;
+	}
 
 	span {
 		font-size: 0.75rem;
@@ -77,42 +81,66 @@ const Footer = styled.footer`
 `;
 
 const Layout = ({ children }) => (
-	<StaticQuery
-		query={graphql`
+  <StaticQuery
+    query={graphql`
 			query LayoutQuery {
 				site {
 					buildTime(formatString: "DD.MM.YYYY")
 				}
 			}
 		`}
-		render={() => (
-			<ThemeProvider theme={theme}>
-				<React.Fragment>
-					<SEO />
-					{children}
-					<Footer>
-						<a
-							href="https://github.com/fe-consulting"
-							target="_blank"
-						>
-							<img
-								src="/images/github.png"
-								alt="Github"
-								width="25"
-								height="auto"
-							/>
-						</a>
-					</Footer>
+    render={() => (
+      <ThemeProvider theme={theme}>
+        <React.Fragment>
+          <SEO/>
+          {children}
+          <Footer>
+            <a
+              href="https://frontend.consulting/rss.xml"
+              target="_blank"
+            >
+              <img
+                src="/images/rss.png"
+                alt="RSS"
+                width="25"
+                height="auto"
+              />
+            </a>
 
-					<Analytics />
-				</React.Fragment>
-			</ThemeProvider>
-		)}
-	/>
+            <a
+              href="https://github.com/fe-consulting"
+              target="_blank"
+            >
+              <img
+                src="/images/github.png"
+                alt="Github"
+                width="25"
+                height="auto"
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/company/frontend-consulting-ltd/"
+              target="_blank"
+            >
+              <img
+                src="/images/linkedin-logo.png"
+                alt="Linkedin"
+                width="25"
+                height="auto"
+              />
+            </a>
+          </Footer>
+
+          <Analytics/>
+        </React.Fragment>
+      </ThemeProvider>
+    )}
+  />
 );
 
 export default Layout;
 
 Layout.propTypes = {
-	children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired
 };
