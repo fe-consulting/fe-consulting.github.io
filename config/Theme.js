@@ -1,8 +1,8 @@
 const theme = {
 	primary: '#64b5f6',
-	bg: '#212121',
+	bg: '#fafafa',
 	dark: 'rgba(0, 0, 0, 0.9)',
-	default: '#fff',
+	default: '#212121',
 	light: 'rgba(0, 0, 0, 0.5)',
 	ultraLight: 'rgba(0, 0, 0, 0.25)',
 	transitionTime: '0.5s',

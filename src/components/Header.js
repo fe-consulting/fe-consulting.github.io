@@ -13,7 +13,6 @@ const Heading = styled.h1`
 
 	a {
 		&:hover {
-			color: #fff;
 			border-color: transparent;
 		}
 	}
@@ -28,7 +27,7 @@ const Navigation = styled.div`
 	display: flex;
 
 	a {
-		font-weight: 100;
+		font-weight: 300;
 		font-size: 18px;
 		margin-left: 2rem;
 		border-bottom: 3px solid transparent;
@@ -41,7 +40,6 @@ const Navigation = styled.div`
 	[aria-current],
 	.current {
 		border-bottom-color: ${theme.primary};
-		color: #fff;
 	}
 `;
 

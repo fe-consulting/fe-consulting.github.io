@@ -15,7 +15,7 @@ const IndexPage = () => (
 					<p>
 						<HeroLine>
 							We help organizations build{' '}
-							<Underlined>better</Underlined> frontends.
+							<Underlined>better</Underlined> frontends
 						</HeroLine>
 
 						<Thin>

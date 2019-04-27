@@ -13,6 +13,7 @@ import theme from '../../config/Theme';
 
 const Title = styled.h1`
 	margin-bottom: 1rem;
+	font-weight: 100;
 `;
 
 const PostContent = styled.div`
@@ -28,12 +29,17 @@ const PostContent = styled.div`
 		border-bottom: 1px solid ${theme.primary};
 		padding-bottom: 2px;
 	}
+
+	p,
+	pre {
+		margin-top: 1.66rem;
+	}
 `;
 
 injectGlobal`
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
 `;
-require('prismjs/themes/prism-tomorrow.css');
+require('prismjs/themes/prism.css');
 
 const Post = props => {
 	const { slug, prev, next } = props.pageContext;
