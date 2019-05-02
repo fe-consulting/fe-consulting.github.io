@@ -9,50 +9,53 @@
 /sw.js
   Cache-Control: no-cache
 /offline-plugin-app-shell-fallback/
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-4f8aa662bdafadc950c6.js>; rel=preload; as=script
 /on-push-change-detection-for-faster-angular-apps
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /enforce-your-team-coding-style-with-prettier-and-ts-lint
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /frameworks-dont-magically-make-your-code-good
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /why-youll-love-typescripts-readonly-array
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /multi-environment-setup-for-your-angular-app
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /building-an-enterprise-grade-angular-project-structure
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /practical-rx-js-and-angular
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /understanding-angular-modules
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
+  Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
+/state-management-with-ngrx-introduction
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </styles.6b6fe26ad64f70a91fb9.css>; rel=preload; as=script
 /categories/angular
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </0-95ac8dde957ac6de6253.js>; rel=preload; as=script
 /categories/software-engineering
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </0-95ac8dde957ac6de6253.js>; rel=preload; as=script
 /categories/typescript
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </0-95ac8dde957ac6de6253.js>; rel=preload; as=script
 /articles/
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </0-95ac8dde957ac6de6253.js>; rel=preload; as=script
 /categories/
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </0-95ac8dde957ac6de6253.js>; rel=preload; as=script
 /
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </0-95ac8dde957ac6de6253.js>; rel=preload; as=script
 /success/
-  Link: </webpack-runtime-6a954d97acf7b44bf1e2.js>; rel=preload; as=script
+  Link: </webpack-runtime-044d017df7d94bf146e8.js>; rel=preload; as=script
   Link: </0-95ac8dde957ac6de6253.js>; rel=preload; as=script
