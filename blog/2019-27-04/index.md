@@ -2,6 +2,7 @@
 date: '2019-04-27'
 title: "Frameworks don't magically make your code good"
 category: 'software-engineering'
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*jBgcK5sLhAdi6x85PKl02w.jpeg'
 ---
 
 Since the beginning of this decade, Front End web frameworks have dramatically changed the way we build applications, with both pros and cons.

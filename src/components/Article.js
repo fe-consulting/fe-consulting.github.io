@@ -6,12 +6,12 @@ import kebabCase from "lodash/kebabCase";
 import { Subline } from "components";
 
 const Post = styled.article`
-  width: 600px;
+  justify-items: space-between;
+  width: 780px;
 	display: flex;
-	flex-direction: column;
 	margin: 2rem 0;
 	padding: 1rem 0;
-	
+
 	&:last-child {
 		border-color: transparent;
 	}
@@ -33,16 +33,46 @@ const Excerpt = styled.p`
 	color: #878787;
 `;
 
-const Article = ({ title, date, excerpt, slug, timeToRead, category }) => (
+const PostImageWrapper = styled.div`
+	flex: 0 0 300px;
+`;
+
+const PostImage = styled(Link)`
+  background-image: url(${props => props.image});
+  background-origin: border-box;
+  width: 280px;
+  margin-left: 20px;
+  height: 180px;
+  display: block;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+   &:hover {
+    border-bottom-color: transparent;
+  }
+`;
+
+const ArticleMatadataWrapper = styled.div`
+  flex: 0 0 550px;
+`;
+
+const Article = ({ title, date, excerpt, slug, timeToRead, category, featuredImage }) => (
   <Post>
-    <Title>
-      <Link to={slug}>{title}</Link>
-    </Title>
-    <Subline>
-      {date} &mdash; {timeToRead} Min Read &mdash; In{" "}
-      <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
-    </Subline>
-    <Excerpt>{excerpt}</Excerpt>
+    <ArticleMatadataWrapper>
+      <Title>
+        <Link to={slug}>{title}</Link>
+      </Title>
+      <Subline>
+        {date} &mdash; {timeToRead} Min Read &mdash; In{" "}
+        <Link to={`/categories/${kebabCase(category)}`}>{category}</Link>
+      </Subline>
+      <Excerpt>{excerpt}</Excerpt>
+    </ArticleMatadataWrapper>
+    <PostImageWrapper>
+      <PostImage to={slug} image={featuredImage}/>
+    </PostImageWrapper>
   </Post>
 );
 
@@ -54,5 +84,6 @@ Article.propTypes = {
   excerpt: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
-  category: PropTypes.string.isRequired
+  category: PropTypes.string.isRequired,
+  featuredImage: PropTypes.string.isRequired
 };

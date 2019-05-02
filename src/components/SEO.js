@@ -15,14 +15,16 @@ const SEO = props => {
 		const postMeta = postNode.frontmatter;
 		title = postMeta.title; // eslint-disable-line prefer-destructuring
 		description = postNode.excerpt;
-		image = config.siteBanner;
+		image = postMeta.featuredImage;
 		postURL = config.siteUrl + realPrefix + postPath;
 	} else {
 		title = config.siteTitle;
 		description = config.siteDescription;
 		image = config.siteBanner;
 	}
-	image = config.siteUrl + realPrefix + image;
+	if (!image.startsWith('http')) {
+		image = config.siteUrl + realPrefix + image;
+	}
 	const blogURL = config.siteUrl + config.pathPrefix;
 	const schemaOrgJSONLD = [
 		{
@@ -69,7 +71,7 @@ const SEO = props => {
 		<Helmet>
 			<title>{config.siteTitle}</title>
 			<meta name="description" content={description} />
-			<meta name="keywords" content="minimal, blog, layout" />
+			<meta name="keywords" content="Frontend Consulting for Angular, RxJS, Typescript, NGRX" />
 			<meta name="image" content={image} />
 			<script type="application/ld+json">
 				{JSON.stringify(schemaOrgJSONLD)}

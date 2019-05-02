@@ -2,6 +2,7 @@
 date: '2019-04-30'
 title: "Why you'll love Typescript's ReadonlyArray"
 category: 'typescript'
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*E4fL_rwjpkvWwqHXEHi7eg.png'
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/1*E4fL_rwjpkvWwqHXEHi7eg.png)

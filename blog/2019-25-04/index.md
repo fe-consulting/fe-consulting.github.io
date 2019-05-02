@@ -2,6 +2,7 @@
 date: '2019-04-25'
 title: 'Building an enterprise-grade Angular project structure'
 category: 'angular'
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*m05AboOrZxeSIHkBfRqzqw.jpeg'
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/1*m05AboOrZxeSIHkBfRqzqw.jpeg)

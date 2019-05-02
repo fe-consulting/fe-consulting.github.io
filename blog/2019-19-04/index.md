@@ -2,6 +2,7 @@
 date: '2019-04-19'
 title: 'Multi-environment setup for your Angular app'
 category: 'angular'
+featuredImage: '/images/2019-19-04/env.png'
 ---
 
 ![Environments](/images/2019-19-04/env.png "Environments")

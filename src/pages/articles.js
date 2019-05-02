@@ -29,6 +29,7 @@ const PostsPage = ({
 							slug={post.node.fields.slug}
 							category={post.node.frontmatter.category}
 							key={post.node.fields.slug}
+							featuredImage={post.node.frontmatter.featuredImage}
 						/>
 					))}
 			</Content>
@@ -58,6 +59,7 @@ export const IndexQuery = graphql`
 						title
 						date(formatString: "DD.MM.YYYY")
 						category
+						featuredImage
 					}
 					excerpt(pruneLength: 200)
 					timeToRead

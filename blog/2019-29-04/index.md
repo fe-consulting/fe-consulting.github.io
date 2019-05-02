@@ -2,6 +2,7 @@
 date: '2019-04-29'
 title: "Understanding Angular Modules"
 category: 'angular'
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*gpPfP-mWGZ7Ad6KRDAeKGw.jpeg'
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/1*gpPfP-mWGZ7Ad6KRDAeKGw.jpeg)

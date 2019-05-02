@@ -2,6 +2,7 @@
 date: '2019-04-15'
 title: 'OnPush change detection for faster Angular apps'
 category: 'angular'
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*VKY-Ldkt-iHobItql7G_5w.png'
 ---
 
 While not the fastest, by default Angular is one of the most performant frameworks around.
