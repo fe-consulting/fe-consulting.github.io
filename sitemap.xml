@@ -10,6 +10,7 @@
 <url> <loc>https://frontend.consulting/understanding-angular-modules</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/state-management-with-ngrx-introduction</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/writing-scalable-typescript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://frontend.consulting/architecting-the-store-in-ngrx</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/angular</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/software-engineering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/typescript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

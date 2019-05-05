@@ -1,0 +1,414 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:87.5%/1.66 '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;color:inherit;font-family:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:3.157rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;color:inherit;font-family:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.99326rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;color:inherit;font-family:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.58383rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;color:inherit;font-family:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;color:inherit;font-family:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.79459rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;color:inherit;font-family:'-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.7083rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}ul{margin-left:1.66rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.66rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;font-size:0.85rem;line-height:1.66rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;font-size:1rem;line-height:1.66rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}blockquote{margin-left:1.66rem;margin-right:1.66rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.66rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.66rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.66rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.66rem;margin-bottom:calc(1.66rem / 2);margin-top:calc(1.66rem / 2);}li > ul{margin-left:1.66rem;margin-bottom:calc(1.66rem / 2);margin-top:calc(1.66rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.66rem / 2);}code{font-size:0.85rem;line-height:1.66rem;}kbd{font-size:0.85rem;line-height:1.66rem;}samp{font-size:0.85rem;line-height:1.66rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.10667rem;padding-right:1.10667rem;padding-top:0.83rem;padding-bottom:calc(0.83rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}</style><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><title data-react-helmet="true">Architecting the Store in NGRX | Frontend Consulting | Typescript, Angular, NGRX and Rxjs</title><meta data-react-helmet="true" name="description"/><meta data-react-helmet="true" name="keywords" content="Frontend Consulting for Angular, RxJS, Typescript, NGRX"/><meta data-react-helmet="true" name="image" content="https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png"/><meta data-react-helmet="true" property="og:locale" content="de_DE"/><meta data-react-helmet="true" property="og:site_name"/><meta data-react-helmet="true" property="og:url" content="https://frontend.consulting/architecting-the-store-in-ngrx"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:title" content="Architecting the Store in NGRX"/><meta data-react-helmet="true" property="og:description"/><meta data-react-helmet="true" property="og:image" content="https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png"/><meta data-react-helmet="true" property="fb:app_id" content=""/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="gc_psk"/><meta data-react-helmet="true" name="twitter:title" content="Architecting the Store in NGRX"/><meta data-react-helmet="true" name="twitter:url" content="https://frontend.consulting"/><meta data-react-helmet="true" name="twitter:description"/><meta data-react-helmet="true" name="twitter:image" content="https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png"/><script data-react-helmet="true" type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","url":"https://frontend.consulting/","name":"Frontend Consulting | Typescript, Angular, NGRX and Rxjs","alternateName":"Frontend Consulting"}]</script><script data-react-helmet="true" type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","url":"https://frontend.consulting/","name":"Architecting the Store in NGRX","alternateName":"Frontend Consulting"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://frontend.consulting/architecting-the-store-in-ngrx","name":"Architecting the Store in NGRX","image":"https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png"}}]},{"@context":"http://schema.org","@type":"BlogPosting","url":"https://frontend.consulting/","name":"Architecting the Store in NGRX","alternateName":"Frontend Consulting","headline":"Architecting the Store in NGRX","image":{"@type":"ImageObject","url":"https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png"}}]</script><style data-styled-components="iYAehQ bkrTGl iqyGec dhCPRd bLlJxD bLskdq jxVsqx hLBrvM dstUWH VLDzk bULfeK">
+/* sc-component-id: Header__Heading-beimjb-0 */
+.bkrTGl{font-size:18px;font-weight:500;margin:0;padding:0.5rem 0;font-family:'Raleway',sans-serif;} .bkrTGl a:hover{border-color:transparent;}
+/* sc-component-id: Header__Navigation-beimjb-1 */
+.iqyGec{-webkit-flex:1;-ms-flex:1;flex:1;-webkit-align-items:end;-webkit-box-align:end;-ms-flex-align:end;align-items:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;line-height:15px;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;} .iqyGec a{font-weight:300;font-size:18px;margin-left:2rem;border-bottom:3px solid transparent;padding:0.5rem 0;-webkit-transition:border 0.25s;transition:border 0.25s;font-family:'Raleway',sans-serif;} .iqyGec a:hover,.iqyGec [aria-current],.iqyGec .current{border-bottom-color:#64b5f6;}
+/* sc-component-id: Header__FlexHeader-beimjb-2 */
+.iYAehQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;max-width:1140px;margin:0 auto;padding:1rem 3rem;} @media (max-width:600px){.iYAehQ{padding:20px;}}
+/* sc-component-id: sc-global-1697483289 */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600'); body{color:#212121;background:#fafafa;font-family:'Raleway',sans-serif;} @media (max-width:600px){body{font-size:14px;}} body::selection,body::-moz-selection{background:#fafafa;} a{color:#212121;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:all 0.5s;transition:all 0.5s;border-bottom:1px solid transparent;} a:hover{border-color:#64b5f6;color:#212121;} h1,h2,h3,h4{color:#212121;} blockquote{font-style:italic;position:relative;} blockquote:before{content:"";position:absolute;background:#64b5f6;height:100%;width:6px;margin-left:-1.6rem;} label{margin-bottom:.5rem;color:rgba(0,0,0,0.9);} input,textarea{border-radius:.5rem;border:none;background:rgba(0,0,0,0.05);padding:.25rem 1rem;} input:focus,textarea:focus{outline:none;}
+/* sc-component-id: Layout__Footer-sc-1883uv5-0 */
+.bULfeK{text-align:center;padding:0;} .bULfeK a{padding:0 1rem;} .bULfeK span{font-size:0.75rem;}
+/* sc-component-id: PrevNext__Wrapper-a8usab-0 */
+.dstUWH{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:6rem auto 0 auto;justify-items:center;} .dstUWH a{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+/* sc-component-id: PrevNext__Next-a8usab-2 */
+.VLDzk{margin-left:auto;text-align:right;} .VLDzk span{text-transform:uppercase;font-size:0.8rem;}
+/* sc-component-id: Subline-sc-1oopd01-0 */
+.jxVsqx{font-size:0.9rem;}
+/* sc-component-id: Wrapper-sc-132nl7e-0 */
+.dhCPRd{display:grid;grid-template-columns:1fr minmax(320px,1140px) 1fr;padding:0 1rem;}
+/* sc-component-id: Content-sgn00h-0 */
+.bLlJxD{grid-column:2;padding:1rem 3rem;overflow:hidden;} @media (max-width:1200px){.bLlJxD{padding:3rem 2rem;}} @media (max-width:600px){.bLlJxD{padding:2rem 0.5rem;}}
+/* sc-component-id: post__Title-sc-12e8ad-0 */
+.bLskdq{margin-bottom:1rem;font-weight:100;}
+/* sc-component-id: post__PostContent-sc-12e8ad-1 */
+.hLBrvM{font-size:18px;font-weight:300;font-family:'Merriweather',serif;line-height:2;width:100%;max-width:800px;margin-top:2em;} .hLBrvM a[target='_blank']{border-bottom:1px solid #64b5f6;padding-bottom:2px;} .hLBrvM p,.hLBrvM pre{margin-top:1.66rem;}
+/* sc-component-id: sc-global-1250939217 */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');</style><style type="text/css">
+    .anchor {
+      float: left;
+      padding-right: 4px;
+      margin-left: -20px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var offset = element.offsetTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><style data-href="/styles.6b6fe26ad64f70a91fb9.css">code[class*=language-],pre[class*=language-]{font-family:Consolas,Menlo,Monaco,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Courier New,Courier,monospace;font-size:14px;line-height:1.375;direction:ltr;background:#f5f7ff;color:#5e6687}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{background:#dfe2f1}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#dfe2f1}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#898ea4}.token.punctuation{color:#5e6687}.token.namespace{opacity:.7}.token.boolean,.token.number,.token.operator{color:#c76b29}.token.property{color:#c08b30}.token.tag{color:#3d8fd1}.token.string{color:#22a2c9}.token.selector{color:#6679cc}.token.attr-name{color:#c76b29}.language-css .token.string,.style .token.string,.token.entity,.token.url{color:#22a2c9}.token.attr-value,.token.control,.token.directive,.token.keyword,.token.unit{color:#ac9739}.token.atrule,.token.regex,.token.statement{color:#22a2c9}.token.placeholder,.token.variable{color:#3d8fd1}.token.deleted{text-decoration:line-through}.token.inserted{border-bottom:1px dotted #202746;text-decoration:none}.token.important{color:#c94922}pre>code.highlight{outline:.4em solid #c94922;outline-offset:.4em}.line-numbers .line-numbers-rows{border-right-color:#dfe2f1}.line-numbers-rows>span:before{color:#979db4}.line-highlight{background:rgba(107,115,148,.2);background:-webkit-gradient(linear,left top,right top,color-stop(70%,rgba(107,115,148,.2)),to(rgba(107,115,148,0)));background:linear-gradient(90deg,rgba(107,115,148,.2) 70%,rgba(107,115,148,0))}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><link href="//fonts.googleapis.com/css?family=-apple-system,+BlinkMacSystemFont,+&quot;Segoe+UI&quot;,+Roboto,+Helvetica,+Arial,+sans-serif,+&quot;Apple+Color+Emoji&quot;,+&quot;Segoe+UI+Emoji&quot;,+&quot;Segoe+UI+Symbol&quot;;:700|-apple-system,+BlinkMacSystemFont,+&quot;Segoe+UI&quot;,+Roboto,+Helvetica,+Arial,+sans-serif,+&quot;Apple+Color+Emoji&quot;,+&quot;Segoe+UI+Emoji&quot;,+&quot;Segoe+UI+Symbol&quot;;:400" rel="stylesheet" type="text/css"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#64b5f6"/><meta name="generator" content="Gatsby 2.3.22"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=7cff4860a51e9c0056df4ff0963a38d7"/><link rel="alternate" type="application/rss+xml" title="Frontend Consulting Blog RSS Feed" href="/rss.xml"/><link as="script" rel="preload" href="/0-95ac8dde957ac6de6253.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-7008ed8240094255cfb1.js"/><link as="script" rel="preload" href="/app-bbe1f7b2d86c03c6a83d.js"/><link as="script" rel="preload" href="/styles-13cdc98a336952e7e60b.js"/><link as="script" rel="preload" href="/webpack-runtime-acaab20f0b1a79361679.js"/><link as="fetch" rel="preload" href="/static/d/644/path---architecting-the-store-in-ngrx-459-3a4-MubUL4G6VGehhRiNdiMgJCYjcM.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div class="Header__FlexHeader-beimjb-2 iYAehQ"><h1 class="Header__Heading-beimjb-0 bkrTGl"><a href="/">frontend.consulting</a></h1><div class="Header__Navigation-beimjb-1 iqyGec"><a href="/articles">articles</a><a href="mailto:gc@frontend.consulting">get in touch</a></div></div><div class="Wrapper-sc-132nl7e-0 dhCPRd"><div class="Content-sgn00h-0 bLlJxD"><h1 class="post__Title-sc-12e8ad-0 bLskdq">Architecting the Store in NGRX</h1><div class="Subline-sc-1oopd01-0 jxVsqx">05.05.2019<!-- --> — <!-- -->11<!-- --> Min Read — In<!-- --> <a href="/categories/angular">angular</a></div><div class="post__PostContent-sc-12e8ad-1 hLBrvM"><p><img src="https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png"></p>
+<p>This is the second article of a series that aims to explain in detail a step-by-step approach to building an Angular application with NGRX.</p>
+<p>In <a href="https://medium.com/r/?url=https%3A%2F%2Fitnext.io%2Fstate-management-with-ngrx-introduction-1aae0803e988" target="_blank" rel="nofollow noopener noreferrer">the first article of this series</a>, I wrote a small overview of all the concepts surrounding the NGRX platform.</p>
+<p>If you have never worked with NGRX, or have never done something in-depth with, I’d really recommend you read it.</p>
+<h3 id="ngrx-8"><a href="#ngrx-8" aria-label="ngrx 8 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NGRX 8</h3>
+<p>In the previous article, the concepts were explained using the current NGRX version. In order to keep the articles up to date, from now on I will introduce and explain the same concepts using the latest features released in NGRX version 8. There’s some really cool stuff out!</p>
+<p>In particular, we will look at how to create:</p>
+<ul>
+<li>actions with <code class="language-text">createAction</code></li>
+<li>reducers with <code class="language-text">createReducer</code></li>
+<li>effects with <code class="language-text">createEffect</code> (in the next article)</li>
+</ul>
+<h3 id="what-is-this-article-about"><a href="#what-is-this-article-about" aria-label="what is this article about permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is this article about?</h3>
+<p>In this article instead, we will explore the process of building the entities that make up our store and will be setting up the entity adapter, the actions, and the reducers for each entity.</p>
+<p>As a follow up to one of my previous articles about <a href="https://medium.com/r/?url=https%3A%2F%2Fitnext.io%2Fbuilding-an-enterprise-grade-angular-project-structure-f5be32533ba3" target="_blank" rel="nofollow noopener noreferrer">creating a scalable folders structure</a>, we will see an example of creating store modules as service modules imported by our domain module.</p>
+<p>We will build an application that retrieves live crypto prices from <a href="https://medium.com/r/?url=https%3A%2F%2Fcoincap.io" target="_blank" rel="nofollow noopener noreferrer">Coincap</a>** and displays them in a customizable dashboard.</p>
+<p>We will call this demo application <em>Cryptofolio,</em> which I hope to publish at the end of this series.</p>
+<p><em>** I explored various websites for fetching live prices and Coincap was by far the easiest and clearer provider. Kudos to the team!</em></p>
+<h2 id="setting-up-angular-and-ngrx"><a href="#setting-up-angular-and-ngrx" aria-label="setting up angular and ngrx permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up Angular and NGRX</h2>
+<p>Let’s see how to set up an Angular application and NGRX.</p>
+<h3 id="angular-cli-workspace"><a href="#angular-cli-workspace" aria-label="angular cli workspace permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Angular CLI Workspace</h3>
+<p>The first thing you may want to do is to create a new application with Angular CLI and add the routing and style parameters.</p>
+<p><code class="language-text">ng new &lt;app&gt; --routing --style=scss</code></p>
+<h3 id="ngrx"><a href="#ngrx" aria-label="ngrx permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>NGRX</h3>
+<p>Let’s install all the libraries needed to work with NGRX:</p>
+<p><code class="language-text">npm i @ngrx/store @ngrx/effects @ngrx/entity</code></p>
+<p>And you’re pretty much all set!</p>
+<h2 id="projects-folder-structure"><a href="#projects-folder-structure" aria-label="projects folder structure permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Project’s Folder Structure</h2>
+<p>Let’s take a brief look at the project structure I opted for:</p>
+<p><img src="https://cdn-images-1.medium.com/max/1600/1*ZTWoVjCnGCJMMNUzxcdcUw.png"></p>
+<ul>
+<li><strong>What’s in store</strong>?
+Every folder in <code class="language-text">store</code> is an Angular Service Module that simply sets up the NGRX store and effects for the Dashboard Module, which is a domain module where our application’s smart components are placed.</li>
+</ul>
+<p>Let’s take a look at the <code class="language-text">DashboardStoreModule</code> which is still very simple:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript">@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  
+    imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>  
+        StoreModule<span class="token punctuation">.</span><span class="token function">forFeature</span><span class="token punctuation">(</span><span class="token string">'dashboard'</span><span class="token punctuation">,</span> dashboardReducer<span class="token punctuation">)</span><span class="token punctuation">,</span>  
+        <span class="token comment">// will import effects  </span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>  
+    providers<span class="token punctuation">:</span> <span class="token punctuation">[</span>  
+       <span class="token comment">// will import providers  </span>
+    <span class="token punctuation">]</span>  
+<span class="token punctuation">}</span><span class="token punctuation">)</span>  
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">DashboardStoreModule</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre></div>
+<p>The <code class="language-text">DashboardModule</code> will then import <code class="language-text">DashboardStoreModule</code> and the other store modules:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript">@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  
+    declarations<span class="token punctuation">:</span> <span class="token punctuation">[</span>  
+       <span class="token comment">// components  </span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>  
+    imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>  
+        <span class="token comment">// store service modules_ DashboardStoreModule,  </span>
+        PricesStoreModule<span class="token punctuation">,</span>  
+        AssetsStoreModule<span class="token punctuation">,</span>
+
+        <span class="token comment">// other modules</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>  
+    exports<span class="token punctuation">:</span> <span class="token punctuation">[</span>RouterModule<span class="token punctuation">]</span>  
+<span class="token punctuation">}</span><span class="token punctuation">)</span>  
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">DashboardModule</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li><strong>Where is DashboardModule imported?</strong>
+The <code class="language-text">DashboardModule</code> is a lazy-loaded module, so we do not import it from anywhere in our application, but instead, we reference it in our routing module configuration.</li>
+</ul>
+<p>In order to make lazy-loaded feature modules work with NGRX, we need to call the forRoot method, although with empty values, for both the <code class="language-text">StoreModule</code> and the <code class="language-text">EffectsModule</code>.</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript">@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  
+    declarations<span class="token punctuation">:</span> <span class="token punctuation">[</span>AppComponent<span class="token punctuation">]</span><span class="token punctuation">,</span>  
+    imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>  
+        <span class="token comment">// other modules,  </span>
+        StoreModule<span class="token punctuation">.</span><span class="token function">forRoot</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> metaReducers <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  
+        EffectsModule<span class="token punctuation">.</span><span class="token function">forRoot</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>  
+    bootstrap<span class="token punctuation">:</span> <span class="token punctuation">[</span>AppComponent<span class="token punctuation">]</span>  
+<span class="token punctuation">}</span><span class="token punctuation">)</span>  
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AppModule</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre></div>
+<h2 id="store-entities"><a href="#store-entities" aria-label="store entities permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Store Entities</h2>
+<p>In order to architect the store, we need to first analyze our data structures.</p>
+<p>As I mentioned above, the application will feature a <strong>dashboard</strong> with <strong>tiles</strong>, and each widget will contain cryptocurrency price tickers. In order to retrieve to display the <strong>prices</strong>, we first need to load the <strong>assets (cryptocurrencies)</strong>.</p>
+<p>We then have 4 different entities that we will use to build our fairly simple store:</p>
+<ul>
+<li>a dashboard that contains tiles (or widgets)</li>
+<li>a list of assets (cryptocurrencies)</li>
+<li>a price (for each asset subscribed)</li>
+</ul>
+<h3 id="flat-vs-nested-store"><a href="#flat-vs-nested-store" aria-label="flat vs nested store permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Flat vs Nested Store</h3>
+<p>We have two ways of building the store:</p>
+<ul>
+<li>a nested structure, by directly adding prices to the assets store</li>
+<li>a flat structure, where assets and prices are separated into two separate objects and are only related based on the asset ID</li>
+</ul>
+<p>I personally prefer a flat structure. </p>
+<p><strong>Why?</strong> I have, mistakenly, opted for nested structures in the past and I found the following issues:</p>
+<ul>
+<li>by adding a price directly to an asset, we’d be changing the original interface of the entity</li>
+<li>deeper, nested structures are more difficult to query</li>
+</ul>
+<p>In this simple example, it doesn’t really affect greatly performance or complexity. However, if you plan on building a big application with a complex state, you will quickly see how the selectors and the store complexity creeping up as a result of a nested structure.</p>
+<p>My advice is to keep the store as a flat structure of objects and keep the relations between them using unique values.</p>
+<h2 id="dashboard-store"><a href="#dashboard-store" aria-label="dashboard store permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard Store</h2>
+<p>For simplicity, we will keep the dashboard fairly minimal. We only need two things from a widget:</p>
+<ul>
+<li>a tile ID</li>
+<li>an asset ID</li>
+</ul>
+<p>In order to build this part of the store, we will use <code class="language-text">@ngrx/entity</code> .</p>
+<h3 id="tile-class"><a href="#tile-class" aria-label="tile class permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tile class</h3>
+<p>Let’s first create a class named <code class="language-text">Tile</code> that represents the model of our state:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Tile</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">public</span> <span class="token keyword">readonly</span> id <span class="token operator">=</span> <span class="token function">uuid</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token parameter"><span class="token keyword">public</span> assetId<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">string</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>  
+<span class="token punctuation">}</span></code></pre></div>
+<p>Of course, unless a tile is preloaded with an asset ID, the asset ID won’t be defined until the user decides which asset to display, which is why we mark as possibly <code class="language-text">undefined</code>.</p>
+<h3 id="dashboard-adapter"><a href="#dashboard-adapter" aria-label="dashboard adapter permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard Adapter</h3>
+<p>We move on and proceed to create the adapter for our state. Our state will simply be an entity state with a collection of tiles:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">const</span> dashboardAdapter<span class="token punctuation">:</span> EntityAdapter<span class="token operator">&lt;</span>Tile<span class="token operator">></span> <span class="token operator">=</span> createEntityAdapter<span class="token operator">&lt;</span>  
+    Tile  
+<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h3 id="dashboard-actions"><a href="#dashboard-actions" aria-label="dashboard actions permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard Actions</h3>
+<p>In order to create our actions, we will be using the new factory provided by NGRX 8 called <code class="language-text">createAction</code> .</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">enum</span> DashboardActionTypes <span class="token punctuation">{</span>  
+    AddTile <span class="token operator">=</span> <span class="token string">'[Dashboard] ADD_TILE'</span><span class="token punctuation">,</span>  
+    RemoveTile <span class="token operator">=</span> <span class="token string">'[Dashboard] REMOVE_TILE'</span><span class="token punctuation">,</span>  
+    UpdateTile <span class="token operator">=</span> <span class="token string">'[Dashboard] UPDATE_TILE'</span>  
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> addTile <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    DashboardActionTypes<span class="token punctuation">.</span>AddTile<span class="token punctuation">,</span> <span class="token comment">// action name  </span>
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> Tile <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// action payload type  </span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> removeTile <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    DashboardActionTypes<span class="token punctuation">.</span>RemoveTile<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> updateTile <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    DashboardActionTypes<span class="token punctuation">.</span>UpdateTile<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> Tile <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>To summarise the code, we have created 3 actions:</p>
+<ul>
+<li><code class="language-text">addTile</code> whose payload is a <code class="language-text">Tile</code> class</li>
+<li><code class="language-text">removeTile</code> which only receives a string as payload, which is the ID</li>
+<li><code class="language-text">updateTile</code> which also receives a <code class="language-text">Tile</code> class</li>
+</ul>
+<p>Notice that <code class="language-text">props</code> is a function that gets imported from <code class="language-text">@ngrx/store</code> and gets called as a second argument.</p>
+<h3 id="dashboard-reducer"><a href="#dashboard-reducer" aria-label="dashboard reducer permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dashboard Reducer</h3>
+<p>In order to build the dashboard reducer, we will use the new factory method called <code class="language-text">createReducer</code> that takes the following arguments:</p>
+<ul>
+<li>the first argument is the initial state, that we created using the entity adapter</li>
+<li>all the following arguments are the reducer functions for each action, that we define using the function <code class="language-text">on</code> also imported from <code class="language-text">@ngrx/store</code> </li>
+<li>we use the entity adapter methods in order to add, remove and update the dashboard’s tiles</li>
+</ul>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token comment">// we create the state by adding an empty tile_</span>
+
+<span class="token keyword">const</span> emptyTile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Tile</span><span class="token punctuation">(</span>undefined<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token keyword">const</span> initialState <span class="token operator">=</span> dashboardAdapter<span class="token punctuation">.</span><span class="token function">addOne</span><span class="token punctuation">(</span>  
+    emptyTile<span class="token punctuation">,</span>  
+    dashboardAdapter<span class="token punctuation">.</span><span class="token function">getInitialState</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> dashboardReducerFn <span class="token operator">=</span> <span class="token function">createReducer</span><span class="token punctuation">(</span>  
+    initialState<span class="token punctuation">,</span>  
+    <span class="token function">on</span><span class="token punctuation">(</span>addTile<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> dashboardAdapter<span class="token punctuation">.</span><span class="token function">addOne</span><span class="token punctuation">(</span>payload<span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  
+    <span class="token function">on</span><span class="token punctuation">(</span>removeTile<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> dashboardAdapter<span class="token punctuation">.</span><span class="token function">removeOne</span><span class="token punctuation">(</span>payload<span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  
+    <span class="token function">on</span><span class="token punctuation">(</span>updateTile<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> payload<span class="token punctuation">:</span> Tile <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> dashboardAdapter<span class="token punctuation">.</span><span class="token function">updateOne</span><span class="token punctuation">(</span>  
+            <span class="token punctuation">{</span> id<span class="token punctuation">:</span> payload<span class="token punctuation">.</span>id<span class="token punctuation">,</span> changes<span class="token punctuation">:</span> <span class="token punctuation">{</span> assetId<span class="token punctuation">:</span> payload<span class="token punctuation">.</span>assetId <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>  
+            state  
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">dashboardReducer</span><span class="token punctuation">(</span>  
+    <span class="token parameter">state <span class="token operator">=</span> initialState<span class="token punctuation">,</span>  
+    action<span class="token punctuation">:</span> Action</span>  
+<span class="token punctuation">)</span><span class="token punctuation">:</span> EntityState<span class="token operator">&lt;</span>Tile<span class="token operator">></span> <span class="token punctuation">{</span>  
+    <span class="token keyword">return</span> <span class="token function">dashboardReducerFn</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span></code></pre></div>
+<p>We import the reducer in the <code class="language-text">DashboardStoreModule</code> :</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript">@<span class="token function">NgModule</span><span class="token punctuation">(</span><span class="token punctuation">{</span>  
+    imports<span class="token punctuation">:</span> <span class="token punctuation">[</span>  
+         StoreModule<span class="token punctuation">.</span><span class="token function">forFeature</span><span class="token punctuation">(</span><span class="token string">'dashboard'</span><span class="token punctuation">,</span> dashboardReducer<span class="token punctuation">)</span><span class="token punctuation">,</span>  
+    <span class="token punctuation">]</span>  
+<span class="token comment">// more</span></code></pre></div>
+<h2 id="assets-store"><a href="#assets-store" aria-label="assets store permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assets Store</h2>
+<p>As we are going to receive the list of assets using Coincap’s API, we’re just going to replicate their interface:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">Asset</span> <span class="token punctuation">{</span>  
+    id<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    rank<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    <span class="token builtin">symbol</span><span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    name<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    supply<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    maxSupply<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>  
+    marketCapUsd<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    volumeUsd24Hr<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    priceUsd<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    changePercent24Hr<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+    vwap24Hr<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span></code></pre></div>
+<h3 id="assets-actions"><a href="#assets-actions" aria-label="assets actions permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assets Actions</h3>
+<p>In order to fetch the assets, we will need to perform an HTTP request to Coincap’s API. The HTTP action will be going through the effect method we’re going to define in the next article. </p>
+<p>What’s important to notice here is the way I’ve broken up the assets’ <em>actions</em>:</p>
+<ul>
+<li><strong>getAssetsRequestStarted:</strong><br>
+action that gets dispatched when the request starts</li>
+<li><strong>getAssetsRequestSuccess:</strong><br>
+action that gets dispatched when the request succeeded (no error actions in this case for simplicity, but you should always create them)</li>
+<li><strong>addAssets:</strong><br>
+action that will only be used by the reducer, which is a command to add assets to the store</li>
+</ul>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">enum</span> AssetsActionsTypes <span class="token punctuation">{</span>  
+    GetAssetsRequestStarted <span class="token operator">=</span> <span class="token string">'[Assets API] GET_ASSETS_REQUEST_STARTED'</span><span class="token punctuation">,</span>  
+    GetAssetsRequestSuccess <span class="token operator">=</span> <span class="token string">'[Assets API] GET_ASSETS_REQUEST_SUCCESS'</span><span class="token punctuation">,</span>  
+    AddAssets <span class="token operator">=</span> <span class="token string">'[Assets] ADD_ASSETS'</span>  
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> getAssetsRequestStarted <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    AssetsActionsTypes<span class="token punctuation">.</span>GetAssetsRequestStarted<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> <span class="token builtin">string</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> getAssetsRequestSuccess <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    AssetsActionsTypes<span class="token punctuation">.</span>GetAssetsRequestSuccess<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> Asset<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> addAssets <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    AssetsActionsTypes<span class="token punctuation">.</span>AddAssets<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> Asset<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h3 id="assets-reducer-and-adapter"><a href="#assets-reducer-and-adapter" aria-label="assets reducer and adapter permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assets Reducer and Adapter</h3>
+<p>The only reducer function reacting to the <em>addAssets</em> action will simply add all the assets to the store once they get fetched.</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token comment">// adapter   </span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> assetsAdapter<span class="token punctuation">:</span> EntityAdapter<span class="token operator">&lt;</span>Asset<span class="token operator">></span> <span class="token operator">=</span> createEntityAdapter<span class="token operator">&lt;</span>Asset<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">{</span>  
+    <span class="token function-variable function">selectId</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">asset<span class="token punctuation">:</span> Asset</span><span class="token punctuation">)</span> <span class="token operator">=></span> asset<span class="token punctuation">.</span>id  
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// reducer  </span>
+<span class="token keyword">const</span> initialState <span class="token operator">=</span> assetsAdapter<span class="token punctuation">.</span><span class="token function">getInitialState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> assetsReducerFn <span class="token operator">=</span> <span class="token function">createReducer</span><span class="token punctuation">(</span>  
+    initialState<span class="token punctuation">,</span>  
+    <span class="token function">on</span><span class="token punctuation">(</span>addAssets<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> assetsAdapter<span class="token punctuation">.</span><span class="token function">addAll</span><span class="token punctuation">(</span>payload<span class="token punctuation">,</span> state<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">assetsReducer</span><span class="token punctuation">(</span>  
+    <span class="token parameter">state<span class="token punctuation">:</span> EntityState<span class="token operator">&lt;</span>Asset<span class="token operator">></span> <span class="token operator">|</span> undefined<span class="token punctuation">,</span>  
+    action<span class="token punctuation">:</span> Action</span>  
+<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+    <span class="token keyword">return</span> <span class="token function">assetsReducerFn</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span></code></pre></div>
+<h2 id="prices-store"><a href="#prices-store" aria-label="prices store permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prices Store</h2>
+<p>The prices returned by Coincap’s API are very simple and are just objects with the key of an asset and its relative price. As such, we have a very simple store for prices.</p>
+<h3 id="prices-actions"><a href="#prices-actions" aria-label="prices actions permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prices Actions</h3>
+<p>We will be creating 3 actions:</p>
+<ul>
+<li><strong>addPrice</strong>:<br>
+action for updating the store once a price is received</li>
+<li><strong>createPriceSubscription</strong>:<br>
+action for creating a subscription</li>
+<li><strong>closePriceSubscription</strong>:<br>
+action for closing a subscription</li>
+</ul>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">enum</span> PricesActionsTypes <span class="token punctuation">{</span>  
+    AddPrice <span class="token operator">=</span> <span class="token string">'[Prices Store] ADD_PRICE'</span><span class="token punctuation">,</span>  
+    CreatePriceSubscription <span class="token operator">=</span> <span class="token string">'[Prices Stream] CREATE_PRICE_SUBSCRIPTION'</span><span class="token punctuation">,</span>  
+    ClosePriceSubscription <span class="token operator">=</span> <span class="token string">'[Prices Stream] CLOSE_PRICE_SUBSCRIPTION'</span><span class="token punctuation">,</span>  
+    PriceReceived <span class="token operator">=</span> <span class="token string">'[Prices Stream] PRICE_RECEIVED'</span>  
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> addPrice <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    PricesActionsTypes<span class="token punctuation">.</span>AddPrice<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> Price <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> createPriceSubscription <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    PricesActionsTypes<span class="token punctuation">.</span>CreatePriceSubscription<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> closePriceSubscription <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    PricesActionsTypes<span class="token punctuation">.</span>ClosePriceSubscription  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> priceReceived <span class="token operator">=</span> <span class="token function">createAction</span><span class="token punctuation">(</span>  
+    PricesActionsTypes<span class="token punctuation">.</span>PriceReceived<span class="token punctuation">,</span>  
+    props<span class="token operator">&lt;</span><span class="token punctuation">{</span> payload<span class="token punctuation">:</span> Price <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<h3 id="prices-reducer"><a href="#prices-reducer" aria-label="prices reducer permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Prices Reducer</h3>
+<p>As the prices returned by Coincap’s real-time API are simply a key with the asset and its price, we really don’t need to do much with the entity framework.</p>
+<p>Indeed, for each price received, we simply set the key with the asset ID in our store and its price by spreading the price objects with the new payload.</p>
+<p>If it doesn’t exist, it gets created, otherwise, it gets overwritten with its newest value.</p>
+<p>Imagine our state is:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{ &quot;bitcoin&quot;: &quot;some price&quot; };</code></pre></div>
+<p>And our payload from the WebSocket’s stream is:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{ &quot;ethereum&quot;: &quot;another price&quot; }</code></pre></div>
+<p>This will simply become:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{   
+    &quot;bitcoin&quot;: &quot;some price&quot;,  
+    &quot;ethereum&quot;: &quot;another price&quot;  
+};</code></pre></div>
+<p>And here is the code with one simple action:</p>
+<div class="gatsby-highlight" data-language="typescript"><pre class="language-typescript"><code class="language-typescript"><span class="token keyword">const</span> initialState<span class="token punctuation">:</span> PriceState <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> pricesReducerFn <span class="token operator">=</span> <span class="token function">createReducer</span><span class="token punctuation">(</span>  
+    initialState<span class="token punctuation">,</span>  
+    <span class="token function">on</span><span class="token punctuation">(</span>addPrice<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> <span class="token punctuation">{</span> payload <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>  
+        <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>state<span class="token punctuation">,</span> <span class="token operator">...</span>payload <span class="token punctuation">}</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>  
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">pricesReducer</span><span class="token punctuation">(</span>  
+    <span class="token parameter">state <span class="token operator">=</span> initialState<span class="token punctuation">,</span>  
+    action<span class="token punctuation">:</span> Action</span>  
+<span class="token punctuation">)</span><span class="token punctuation">:</span> PriceState <span class="token punctuation">{</span>  
+    <span class="token keyword">return</span> <span class="token function">pricesReducerFn</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span> action<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span></code></pre></div>
+<h2 id="an-overview-of-the-store"><a href="#an-overview-of-the-store" aria-label="an overview of the store permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>An overview of the Store</h2>
+<p>Let’s take a look at the store with some data:</p>
+<p><img src="https://cdn-images-1.medium.com/max/2400/1*3U_DkFj1rvw_cCxWyAph4g.png"></p>
+<p>Type caption for image (optional)  </p>
+<ul>
+<li>We have fetched 5 assets</li>
+<li>We have one, empty tile</li>
+<li>We have no prices, as the tile has not been subscribed to an asset</li>
+</ul>
+<h2 id="takeaways"><a href="#takeaways" aria-label="takeaways permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Takeaways</h2>
+<ul>
+<li>Lay out your application entities and analyze how they relate between each other in order to have a clear understanding of what the store’s structure could look like</li>
+<li>Use NGRX Entity! It’s a great tool to reduce the boilerplate of your reducers</li>
+<li>Separate your UI modules from the store using Store Service Modules</li>
+<li>Prefer a flat structure over a nested one</li>
+<li>Keep actions clear and granular, distinguish between commands and events</li>
+</ul>
+<hr>
+<p>In the next article, we will be looking at creating the effects for fetching the data from the API and the streams for receiving live prices from Coincap.</p>
+<hr>
+<p>Hope you enjoyed the article and send me a message if you agree, disagree, or would do anything differently!</p></div><div class="PrevNext__Wrapper-a8usab-0 dstUWH"><div class="PrevNext__Next-a8usab-2 VLDzk"><span>Next</span><a href="/writing-scalable-typescript">Writing scalable Typescript</a></div></div></div></div><footer class="Layout__Footer-sc-1883uv5-0 bULfeK"><a href="https://frontend.consulting/rss.xml" target="_blank"><img src="/images/rss.png" alt="RSS" width="25" height="auto"/></a><a href="https://github.com/fe-consulting" target="_blank"><img src="/images/github.png" alt="Github" width="25" height="auto"/></a><a href="https://www.linkedin.com/company/frontend-consulting-ltd/" target="_blank"><img src="/images/linkedin-logo.png" alt="Linkedin" width="25" height="auto"/></a></footer><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-137411414-1"></script></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-post-js","jsonName":"architecting-the-store-in-ngrx-459","path":"/architecting-the-store-in-ngrx"};window.dataPath="644/path---architecting-the-store-in-ngrx-459-3a4-MubUL4G6VGehhRiNdiMgJCYjcM";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-bbe1f7b2d86c03c6a83d.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-4f8aa662bdafadc950c6.js"],"component---src-templates-post-js":["/component---src-templates-post-js-7008ed8240094255cfb1.js"],"component---src-templates-category-js":["/component---src-templates-category-js-305f2492b776b61265f8.js"],"component---src-pages-articles-js":["/component---src-pages-articles-js-8c9c991330d4dec5ae84.js"],"component---src-pages-categories-js":["/component---src-pages-categories-js-34fdd1bd8984456c3988.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a68d1bc4e637e9323e6b.js"],"component---src-pages-success-js":["/component---src-pages-success-js-28070e3c42e8e9b5a3ca.js"],"pages-manifest":["/pages-manifest-57b5f044903e26fddb8b.js"]};/*]]>*/</script><script src="/webpack-runtime-acaab20f0b1a79361679.js" async=""></script><script src="/styles-13cdc98a336952e7e60b.js" async=""></script><script src="/app-bbe1f7b2d86c03c6a83d.js" async=""></script><script src="/component---src-templates-post-js-7008ed8240094255cfb1.js" async=""></script><script src="/0-95ac8dde957ac6de6253.js" async=""></script></body></html>
