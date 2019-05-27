@@ -457,7 +457,10 @@ Type caption for image (optional)
 
 ---
 
-In the next article, we will be looking at creating the effects for fetching the data from the API and the streams for receiving live prices from Coincap.
+In the next article, we're going to build the effects that are responsible for fetching assets and prices from Coincap’s API. 
+
+Read it at the link below:
+[Building Side Effects in NGRX](https://medium.com/r/?url=https%3A%2F%2Fitnext.io%2Fbuilding-side-effects-in-ngrx-deb0d856096d)
 
 ---
 

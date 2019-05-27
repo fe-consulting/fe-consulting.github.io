@@ -337,4 +337,7 @@ Let’s break the above snippet down.
 *   A single source of truth such as the store helps us managing the state of our application, with a few exceptions such as when the state is transient
 *   we briefly explored the concept of store, actions, reducers, entities, selectors, and effects, but in the next steps we will go into details into each of these with some more advanced examples
 
+In the next article, we're going to the store of the application and the state’s entities. You can find it at the link below:
+[Architecting the Store in NGRX](https://medium.com/r/?url=https%3A%2F%2Fitnext.io%2Farchitecting-the-store-in-ngrx-e4955641d746)
+
 Hope you enjoyed this article and stay tuned for the next part of this series!
