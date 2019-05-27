@@ -2,7 +2,7 @@
 date: '2019-05-27'
 title: "Abstracting State with NGRX Facades"
 category: 'angular'
-featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*gpPfP-mWGZ7Ad6KRDAeKGw.jpeg'
+featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*TggmpinSAPh1ndMBoTj0bw.png'
 ---
 
 This is the fourth and last article of a series that aims to explain in detail a step-by-step approach to building an Angular application with NGRX.
@@ -91,7 +91,22 @@ Before we build the component, let’s take a look at the Facades. 
 
 We first create the **Dashboard Facade**:
 
-Type caption for embed (optional)  
+```typescript
+@Injectable()
+export class DashboardFacadeServiceImpl implements DashboardFacadeService {
+    public tiles$: Observable<Tile[]> = this.store.select(selectAllTiles);
+
+    constructor(private store: Store<EntityAdapter<Tile>>) {}
+
+    addTile(payload: Tile) {
+        this.store.dispatch(addTile({ payload }));
+    }
+
+    updateTileAsset(id: string, assetId: string) {
+        this.store.dispatch(updateTileAsset({ payload: { id, assetId } }));
+    }
+}
+``` 
 
 Let’s break it down:
 
@@ -100,7 +115,22 @@ Let’s break it down:
 
 We first create the **Assets Facade**:
 
-Type caption for embed (optional)  
+```typescript
+@Injectable()
+export class AssetsFacadeImplService implements AssetsFacadeService {
+    public assets$ = this.store.select(selectAllAssets);
+
+    constructor(private store: Store<EntityState<Asset>>) {}
+
+    getAssets() {
+        this.store.dispatch(
+            getAssetsRequestStarted({
+                payload: []
+            })
+        );
+    }
+}
+```
 
 This one is very simple, we have:
 
@@ -109,13 +139,55 @@ This one is very simple, we have:
 
 And now on to the UI side of things. We define the Dashboard Component’s controller, which will use the two Facades we defined above:
 
-Type caption for embed (optional)  
+```typescript
+@Component({
+    selector: 'cf-dashboard',
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./dashboard.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class DashboardComponent implements OnInit {
+    public tiles$ = this.dashboardFacade.tiles$;
+
+    constructor(
+        private dashboardFacade: DashboardFacadeService,
+        private assetsFacade: AssetsFacadeService
+    ) {}
+
+    ngOnInit() {
+        this.assetsFacade.getAssets();
+    }
+
+    addTile() {
+        this.dashboardFacade.addTile(new Tile(undefined));
+    }
+}
+``` 
 
 *   The template of the component will display the tiles using a Grid List component from Angular Material
 *   Every tile’s state is passed to the component **cf-tile**
 *   A button (`mat-icon-button`) is displayed in its own tile and is used to add a new empty tile
 
-Type caption for embed (optional)  
+```html
+<mat-grid-list
+    cols="4"
+    rowHeight="2:1"
+    gutterSize="15px"
+    *ngIf="tiles$ | async as tiles"
+>
+    <ng-container *ngFor="let tile of tiles">
+        <mat-grid-tile class="pricer">
+            <cf-tile [tile]="tile"></cf-tile>
+        </mat-grid-tile>
+    </ng-container>
+
+    <mat-grid-tile>
+        <button mat-icon-button (click)="addTile()">
+            <mat-icon color="accent">add</mat-icon>
+        </button>
+    </mat-grid-tile>
+</mat-grid-list>
+```
 
 ### Tile Component
 
@@ -126,7 +198,33 @@ The tile component is responsible for displaying either the assets dropdown or t
 
 Let’s move on and define the Pricer Facade:
 
-Type caption for embed (optional)  
+```typescript
+@Injectable()
+export class PricesFacadeServiceImpl implements PricesFacadeService {
+    subscribedAssets$: Observable<string[]> = this.store.select(
+        selectSubscribedAssets
+    );
+
+    constructor(private store: Store<EntityState<PriceState>>) {}
+
+    public createPriceSubscription(assetId: string) {
+        this.addInitialPrice(assetId);
+        this.createSubscription(assetId);
+    }
+
+    public getPriceForAsset(assetId: string): Observable<string> {
+        return this.store.select(selectPriceForAsset(assetId));
+    }
+
+    private addInitialPrice(assetId: string) {
+        this.store.dispatch(addPrice({ payload: { [assetId]: '' } }));
+    }
+
+    private createSubscription(assetId: string) {
+        this.store.dispatch(createPriceSubscription({ payload: assetId }));
+    }
+}
+```  
 
 Now, let’s break what we’ve defined down:
 
@@ -134,11 +232,51 @@ Now, let’s break what we’ve defined down:
 
 The Tile component is very simple: 
 
-Type caption for embed (optional)  
+```typescript
+@Component({
+    selector: 'cf-tile',
+    templateUrl: './tile.component.html',
+    styleUrls: ['./tile.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class TileComponent {
+    @Input() tile: Tile;
+
+    constructor(
+        private dashboardFacade: DashboardFacadeService,
+        private pricesFacade: PricesFacadeService
+    ) {}
+
+    updateTile(assetId: string) {
+        this.dashboardFacade.updateTileAsset(this.tile.id, assetId);
+        this.pricesFacade.createPriceSubscription(assetId);
+    }
+}
+```
 
 In the template, we simply use an `ngSwitch` to either display the price if the `assetId` is defined, or the selector if it is undefined.
 
-Type caption for embed (optional)  
+```html
+<div [ngSwitch]="tile.assetId" fxLayout="column">
+    <div class="tile-header">
+        <div class="tile-heading" *ngSwitchDefault>
+            {{ tile.assetId | titlecase }}
+        </div>
+
+        <cf-asset-selector
+            *ngSwitchCase="undefined"
+            (assetSelected)="updateTile($event)"
+        ></cf-asset-selector>
+    </div>
+
+   <div class="tile-content" fxFlexAlign="center center">
+       <cf-asset-pricer
+           *ngSwitchDefault
+           [asset]="tile.assetId">
+       </cf-asset-pricer>
+   </div>
+</div>
+``` 
 
 The component `cf-asset-selector` will dispatch an output when an asset is selected by the user, and the output will call the method `updateTile` , which will update the tile by assigning it an `assetId`, and then will call the method to create the price subscription and start streaming the asset prices.
 
@@ -146,13 +284,39 @@ The component `cf-asset-selector` will dispatch an output when an asset is selec
 
 The Asset Selector component is simply a dropdown with the available assets that will dispatch an output when an asset has been selected. The assets are queried from the Assets Facade. Simple, right?
 
-Type caption for embed (optional)  
+```typescript
+@Component({
+    selector: 'cf-asset-selector',
+    templateUrl: './asset-selector.component.html',
+    styleUrls: ['./asset-selector.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class AssetSelectorComponent {
+    @Output() assetSelected = new EventEmitter<string>();
+
+    public assets$ = this.assetsFacade.assets$;
+
+    constructor(private assetsFacade: AssetsFacadeService) {}
+}
+```
 
 The template is powered by the `mat-select` component from Angular Material, although a simple select would have done the job. We simply create a select and iterate the assets to create the available option. 
 
 When an option gets selected, the output `assetSelected` will emit a new event.
 
-Type caption for embed (optional)  
+```html
+<mat-form-field>
+    <mat-label>
+        Select Asset
+    </mat-label>
+
+    <mat-select (selectionChange)="assetSelected.next($event.value)">
+        <mat-option *ngFor="let asset of (assets$ | async)" [value]="asset.id">
+            {{ asset.name }}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+``` 
 
 ### Asset Pricer Component
 
@@ -162,7 +326,51 @@ As you may have noticed, this component is the cool one. We receive an asset ID 
 
 > Technically this is a smart component and should have passed the data down to dumb components, but for brevity, I thought it’d be better to show all the code in one single component
 
-Type caption for embed (optional)  
+```typescript
+@Component({
+    selector: 'cf-asset-pricer',
+    templateUrl: './asset-pricer.component.html',
+    styleUrls: ['./asset-pricer.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class AssetPricerComponent implements OnInit {
+    @Input()
+    public asset: string;
+
+    public price$: Observable<string>;
+    public trend$: Observable<Trend>;
+
+    public readonly trends = Trend;
+
+    constructor(private pricesFacade: PricesFacadeService) {}
+
+    ngOnInit() {
+        this.price$ = this.pricesFacade.getPriceForAsset(this.asset).pipe(
+            filter(Boolean),
+            map((price: string) => {
+                return parseFloat(price).toFixed(2);
+            }),
+            shareReplay(1)
+        );
+
+        const timer$ = this.price$.pipe(
+            switchMap(() => timer(2000)),
+            mapTo(Trend.Stale)
+        );
+
+        const trend$ = this.price$.pipe(
+            pairwise(),
+            filter((prices: string[]) => prices[0] !== prices[1]),
+            map((prices: string[]) => prices.map(parseFloat)),
+            map(([previous, current]: number[]) => {
+                return current > previous ? Trend.Up : Trend.Down;
+            })
+        );
+
+        this.trend$ = merge(trend$, timer$);
+    }
+}
+```
 
 This component is a little bit more complex so we may want to break this down. Our goal is to:
 
@@ -178,7 +386,23 @@ This is what happens:
 *   we use the operator `pairwise` that gives us the current and the previous value for the current subscription, and thanks to that we can figure out if the price went up or down
 *   The trend is an observable emitted when a price changes, and is obtained by merging the timer and the trend result. Every time we have a price change, it first becomes red or green, and then goes back to its normal state after 2 seconds when the observable `timer$` emits a value
 
-Type caption for embed (optional)  
+```html
+<div class="price-container">
+    <div class="price"
+         *ngIf="(price$ | async) as price; else showEmptyState"
+         [ngClass]="{
+            'trend-up': (trend$ | async) === trends.Up,
+            'trend-down': (trend$ | async) === trends.Down
+         }"
+    >
+        ${{ price }}
+    </div>
+
+    <ng-template #showEmptyState>
+        <mat-spinner></mat-spinner>
+    </ng-template>
+</div>
+```
 
 The template is very simply the price obtained by the store, replaced by a spinner while the price is undefined, meaning the subscription is still ongoing. 
 
