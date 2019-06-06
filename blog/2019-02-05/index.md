@@ -7,8 +7,6 @@ featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*dlu3ZwrnKXqG1vMbsiemx
 
 ## State Management with NGRX — Introduction
 
-![](https://cdn-images-1.medium.com/max/1600/1*dlu3ZwrnKXqG1vMbsiemxQ.png)
-
 In this article, I want to introduce you to the concepts that make up the NGRX platform and all its pieces to fully understand how it helps us create better applications.
 
 _NGRX_, for those who don’t know yet, is a _Redux_ library for _Angular_. It helps us with state management, which is arguably the hardest part to manage for modern, large scale, client-side applications.

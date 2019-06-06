@@ -5,8 +5,6 @@ category: 'typescript'
 featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*E4fL_rwjpkvWwqHXEHi7eg.png'
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/1*E4fL_rwjpkvWwqHXEHi7eg.png)
-
 If like me you also believe everything should be immutable, you’ll be happy to see what Typescript 3.4 brings with it. 
 
 While just about everything seems great, the thing that caught my attention the most, simply because it’s still one of the most common errors I see in Javascript code, is the introduction of `ReadonlyArray`, which helps us prevent array mutations at compile time.

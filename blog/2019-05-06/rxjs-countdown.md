@@ -7,8 +7,6 @@ featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*UqfNSA5wgWcEXphLsBXuU
 
 #### In this tutorial, we’re going to build a very simple timer application with only a few lines of code using RxJS.
 
-![](https://cdn-images-1.medium.com/max/1600/1*UqfNSA5wgWcEXphLsBXuUg.gif)
-
 ### Preview
 
 Before we get started, you can view the result using the awesome Stackblitz. You can see a preview of the final result at [this link](https://medium.com/r/?url=https%3A%2F%2Frxjs-rajp6s.stackblitz.io).

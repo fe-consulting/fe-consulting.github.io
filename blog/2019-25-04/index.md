@@ -5,8 +5,6 @@ category: 'angular'
 featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*m05AboOrZxeSIHkBfRqzqw.jpeg'
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/1*m05AboOrZxeSIHkBfRqzqw.jpeg)
-
 An important task in setting up a modern front-end project is to define a scalable, long-term and future-proof folders structure, and the naming guidelines for each different programming entity.
 
 While some think of this as a simple and secondary aspect — it often hides more complexities than it seems. Even though most times there is no perfect solution — we can explore some of the industry best practices, and some of the things that in my experience made the most sense.

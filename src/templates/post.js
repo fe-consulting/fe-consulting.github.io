@@ -16,6 +16,12 @@ const Title = styled.h1`
 	font-weight: 100;
 `;
 
+const FeaturedImage = styled.img`
+	width: 800px;
+	height: auto;
+	margin-top: 2rem;
+`;
+
 const PostContent = styled.div`
 	font-size: 18px;
 	font-weight: 300;
@@ -23,7 +29,7 @@ const PostContent = styled.div`
 	line-height: 2;
 	width: 100%;
 	max-width: 800px;
-	margin-top: 2em;
+	margin-top: 0em;
 
 	a[target='_blank'] {
 		border-bottom: 1px solid ${theme.primary};
@@ -64,6 +70,9 @@ const Post = props => {
 							{post.category}
 						</Link>
 					</Subline>
+
+					<FeaturedImage alt={post.title} src={post.featuredImage} />
+
 					<PostContent
 						dangerouslySetInnerHTML={{ __html: postNode.html }}
 					/>
@@ -103,6 +112,7 @@ export const postQuery = graphql`
 				date(formatString: "DD.MM.YYYY")
 				category
 				featuredImage
+				canonical
 			}
 			timeToRead
 		}

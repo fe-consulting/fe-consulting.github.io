@@ -5,8 +5,6 @@ category: 'angular'
 featuredImage: '/images/2019-19-04/env.png'
 ---
 
-![Environments](/images/2019-19-04/env.png "Environments")
-
 One of the most welcome additions to our tooling as Angular developers is certainly the Angular CLI. The CLI allows us to bootstrap an Angular app and also manage it through all its lifecycle. 
 
 One of the best features I enjoyed using is setting up multiple environments for my projects. Most applications will probably use at the very least two environments: production and development. Most likely, larger applications will be running several environments, such as QA, RC, pre-prod, and so on.

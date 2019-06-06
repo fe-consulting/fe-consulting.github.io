@@ -5,8 +5,6 @@ category: 'angular'
 featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*gpPfP-mWGZ7Ad6KRDAeKGw.jpeg'
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/1*gpPfP-mWGZ7Ad6KRDAeKGw.jpeg)
-
 Understanding the different types of [Angular modules](https://angular.io/guide/module-types) is a key factor for architecting or refactoring an application.
 
 The concept of Angular modules has matured since they were first introduced in the framework in a late RC release.

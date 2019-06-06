@@ -7,8 +7,6 @@ featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*xxzCZ_x7oeKlq_NRTw6Ge
 
 #### Let’s explore in detail how to write clean, safe, enterprise-grade Typescript code
 
-![](https://cdn-images-1.medium.com/max/1600/1*xxzCZ_x7oeKlq_NRTw6GeA.jpeg)
-
 Before we get started, I want to give my checklist for “scalable code”; in the case of this article, Typescript code:
 
 *   it is clean, well-formatted, readable code

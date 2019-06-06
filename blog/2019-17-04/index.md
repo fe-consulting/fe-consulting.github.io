@@ -5,8 +5,6 @@ category: 'software-engineering'
 featuredImage: '/images/2019-17-04/prettier.gif'
 ---
 
-![prettier](/images/2019-17-04/prettier.gif "Prettier")
-
 A project’s coding style is the first and most noticeable trait that a new senior hire will be looking at while browsing the codebase for the first time. 
 
 On the surface, that’s because it is probably the simplest way to evaluate a codebase at a glance. On a deeper level, that’s because good programmers just simply love tidiness, simplicity and coherence. These three simple aspects will make or break your hire first impression with your project and company as a whole.

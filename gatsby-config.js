@@ -10,6 +10,12 @@ module.exports = {
 		description: config.siteDescription,
 	},
 	plugins: [
+		{
+			resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+			options: {
+				siteUrl: `https://frontend.consulting`,
+			},
+		},
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-styled-components',
 		{
@@ -87,30 +93,24 @@ module.exports = {
       `,
 				feeds: [
 					{
-						serialize: ({ query: { site, allMarkdownRemark } }) => {
-							return allMarkdownRemark.edges.map(edge => {
-								return Object.assign(
-									{},
-									edge.node.frontmatter,
-									{
-										description: edge.node.excerpt,
-										date: edge.node.frontmatter.date,
-										url:
-											site.siteMetadata.siteUrl +
-											edge.node.fields.slug,
-										guid:
-											site.siteMetadata.siteUrl +
-											edge.node.fields.slug,
-										custom_elements: [
-											{
-												'content:encoded':
-													edge.node.html,
-											},
-										],
-									}
-								);
-							});
-						},
+						serialize: ({ query: { site, allMarkdownRemark } }) =>
+							allMarkdownRemark.edges.map(edge =>
+								Object.assign({}, edge.node.frontmatter, {
+									description: edge.node.excerpt,
+									date: edge.node.frontmatter.date,
+									url:
+										site.siteMetadata.siteUrl +
+										edge.node.fields.slug,
+									guid:
+										site.siteMetadata.siteUrl +
+										edge.node.fields.slug,
+									custom_elements: [
+										{
+											'content:encoded': edge.node.html,
+										},
+									],
+								})
+							),
 						query: `
             {
               allMarkdownRemark(

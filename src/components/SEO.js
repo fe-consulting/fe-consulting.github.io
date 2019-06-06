@@ -10,13 +10,18 @@ const SEO = props => {
 	let description;
 	let image;
 	let postURL;
+	let canonical;
+
 	const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+
 	if (postSEO) {
 		const postMeta = postNode.frontmatter;
 		title = postMeta.title; // eslint-disable-line prefer-destructuring
 		description = postNode.excerpt;
 		image = postMeta.featuredImage;
 		postURL = config.siteUrl + realPrefix + postPath;
+		// eslint-disable-next-line prefer-destructuring
+		canonical = postMeta.canonical;
 	} else {
 		title = config.siteTitle;
 		description = config.siteDescription;
@@ -71,7 +76,11 @@ const SEO = props => {
 		<Helmet>
 			<title>{config.siteTitle}</title>
 			<meta name="description" content={description} />
-			<meta name="keywords" content="Frontend Consulting for Angular, RxJS, Typescript, NGRX" />
+			{canonical ? <link rel="canonical" href={canonical} /> : null}
+			<meta
+				name="keywords"
+				content="Frontend Consulting for Angular, RxJS, Typescript, NGRX"
+			/>
 			<meta name="image" content={image} />
 			<script type="application/ld+json">
 				{JSON.stringify(schemaOrgJSONLD)}

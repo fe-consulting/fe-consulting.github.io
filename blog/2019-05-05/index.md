@@ -5,8 +5,6 @@ category: 'angular'
 featuredImage: 'https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png'
 ---
 
-![](https://cdn-images-1.medium.com/max/1600/1*CYmnppaZkh7OcF1IRH15jQ.png)
-
 This is the second article of a series that aims to explain in detail a step-by-step approach to building an Angular application with NGRX.
 
 In [the first article of this series](https://medium.com/r/?url=https%3A%2F%2Fitnext.io%2Fstate-management-with-ngrx-introduction-1aae0803e988), I wrote a small overview of all the concepts surrounding the NGRX platform.
