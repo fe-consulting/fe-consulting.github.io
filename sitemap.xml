@@ -16,12 +16,14 @@
 <url> <loc>https://frontend.consulting/understanding-angular-modules</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/why-youll-love-typescripts-readonly-array</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/building-scalable-multi-platform-projects-with-angular-and-nx</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://frontend.consulting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://frontend.consulting/debugging-javascript-like-a-pro</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/angular</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/software-engineering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/typescript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/rxjs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://frontend.consulting/categories/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/articles/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://frontend.consulting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://frontend.consulting/success/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
