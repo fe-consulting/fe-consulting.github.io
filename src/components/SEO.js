@@ -74,10 +74,12 @@ const SEO = props => {
 	}
 	return (
 		<Helmet>
+			{ postPath && <meta http-equiv="refresh" content={`0;url=https://angularbites.com${postPath}`} /> }
 			<title>{config.siteTitle}</title>
 			<meta name="description" content={description} />
 			{canonical ? <link rel="canonical" href={canonical} /> : null}
-			<meta
+			{ postNode && <link rel="canonical" href={`https://angularbites.com${postPath}`}> }
+				<meta
 				name="keywords"
 				content="Frontend Consulting for Angular, RxJS, Typescript, NGRX"
 			/>
